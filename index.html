@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind Css -->
+    <link rel="stylesheet" href="dist/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <title>Portofolio Tailwind CSS</title>
+</head>
+<body>
+
+<!-- Header start -->
+<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#" class="font-bold text-lg text-primary block py-6">FerdyHerdianto</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left "></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left "></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group"><a href="#home" class="text-base text-dart py-2 mx-8 flex group-hover:text-primary">Beranda</a></li>
+                            <li class="group"><a href="#about" class="text-base text-dart py-2 mx-8 flex group-hover:text-primary">Tentang Saya</a></li>
+                            <li class="group"><a href="#portfolio" class="text-base text-dart py-2 mx-8 flex group-hover:text-primary">Portfolio</a></li>
+                            <li class="group"><a href="#client" class="text-base text-dart py-2 mx-8 flex group-hover:text-primary">Clients</a></li>
+                            <!-- <li class="group"><a href="#" class="text-base text-dart py-2 mx-8 flex group-hover:text-primary ">Kontak</a></li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+</header>
+<!-- Header end -->
+    
+<!-- Hero Section start -->
+<section id="home" class="pt-36">
+    <div class="container">
+        <div class="flex flex-wrap">
+            <div class="w-full self-center px-4 lg:w-1/2">
+                <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua, saya <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Ferdy Herdianto</span></h1>
+                <h2 class="font-medium text-secondary text-lg mb-5">Mahasiswa & <span class="text-dark lg:text-2xl">Instruktur Pemrograman</span></h2>
+                <p class="font-medium text-secondary mb-10 leading-relaxed">Masih Kuliah Jurusan Sistem Informasi</p>
+
+                <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
+            </div>
+            <div class="w-full self-end px-4 lg:w-1/2">
+                <div class="mt-10 relative lg:mt-9 lg:right-0">
+                    <img src="dist/img/Foto_Profil.png" alt="Foto Ferdy" class="max-w-full mx-auto">
+                    <span class="absolute -bottom-20 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
+                        <svg width="499" height="499" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#00B4D8" d="M37.5,-67.9C41.9,-62.3,34.4,-38.9,42.7,-24.6C50.9,-10.3,74.9,-5.2,77.4,1.4C79.8,8,60.8,16,49.9,25.7C39,35.4,36.3,46.8,29.3,52.8C22.4,58.8,11.2,59.5,2.4,55.3C-6.4,51.2,-12.7,42.1,-27,40.3C-41.2,38.5,-63.3,43.9,-68,38.4C-72.7,32.8,-60,16.4,-58.8,0.7C-57.5,-15,-67.7,-29.9,-61.1,-32.3C-54.6,-34.6,-31.3,-24.3,-18.3,-25C-5.4,-25.7,-2.7,-37.5,6.9,-49.4C16.5,-61.4,33,-73.5,37.5,-67.9Z" transform="translate(100 100) scale(1.1)" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero Section end -->
+
+<!-- About Section start -->
+<section id="about" class="pt-36 pb-32">
+<div class="container">
+    <div class="flex flex-wrap">
+        <div class="w-full px-4 mb-10 lg:w-1/2 ">
+            <h4 class="font-bold uppercase text-primary text-3lg mb-5 max-w-xl">Tentang Saya</h4>
+            <h2 class="font-bold text-dark text-3xl mb-3 lg:text-4xl">Yuk, belajar pemrograman PHP..., gampang kok🤪</h2>
+            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">Hai..., Saya adalah seorang mahasiswa yang hampir lulus di jurusan Sistem Informasi di Universitas Mikroskil Medan, Selain mahasiswa saya juga seorang instruktur pemrograman PHP dasar di Yayasan Lukmanul Hakim Binjai. Enggak terlalu suka kopi. Sekarang saya sedang mempelajari OOP(Object Oriented Programming) pada PHP dan belajar juga sedikit front-end menggunakan Tailwind CSS dan Bootstrap</p>
+        </div>
+        <div class="w-full px-4 lg:w-1/2">
+            <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Mari Berteman</h3>
+            <p class="font-medium text-base text-secondary mb-6 lg:text-lg">Silahkan follow sosial media saya ya man teman 😃😄</p>
+            <div class="flex items-center">
+                <!-- Youtube -->
+                <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                    <i class="fa-brands fa-youtube field-current"></i>
+                </a>
+
+                <!-- Instagram-->
+                <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <!-- Facebook -->
+                <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- About Section start -->
+
+<!-- Portofolio Section start -->
+<section id="portfolio" class="pt-36 pb-16 bg-slate-100">
+    <div class="container">
+        <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center mb-16">
+                <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
+                <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Project Terbaru</h2>
+                <p class="font-medium text-md text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nihil aliquam velit vel perspiciatis ad?</p>
+            </div>
+        </div>
+
+        <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+            <div class="mb-12 p-4 md:w-1/2">
+                <div class="rounded-md shadow-md overflow-hidden">
+                    <img src="dist/img/portfolio/WEB IGI Sumut.png" alt="WEB IGI Sumut" width="w-full">
+                </div>
+                <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Website Ikatan Guru Indonesia(IGI) Sumatera Utara</h3>
+                <p class="font-medium text-base text-secondary">Website IGI Sumut ini digunakan untuk menyampaikan informasi berupa berita dan foto dokumentasi kegiatan.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Portofolio Section end -->
+
+<!-- Clients Section start -->
+<section id="client" class="pt-36 pb-32 bg-slate-700">
+    <div class="container">
+        <div class="w-full px-4">
+            <div class="mx-auto text-center mb-16">
+                <h4 class="font-semibold text-lg text-primary mb-2">Clients</h4>
+                <h2 class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">Yang Pernah Bekerjasama</h2>
+                <p class="font-medium text-md text-secondary md:text-lg">Di bawah ini beberapa client yg pernah saya tangani..., ya walaupun masih satu gk apa moga-moga bisa nambah hehehe...,</p>
+            </div>
+        </div>
+
+        <div class="w-full px-4">
+            <div class="flex flex-wrap items-center justify-center">
+                <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                    <img src="dist/Clients/Provinsi_Sumatera_Utara.png" alt="Logo IGI Sumut">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Clients Section end -->
+
+<!-- footer start -->
+<footer class="bg-dark pt-24 pb-12">
+    <div class="container">
+        <div class="flex flex-wrap">
+            <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/2">
+                <h2 class="font-bold text-4xl text-white mb-5">Kantor</h2>
+                <h3 class="font-bold text-2xl mb-2">Hubungi</h3>
+                <p>Alamat</p>
+            </div>
+
+            <div class="w-full px-4 mb-12 text-slate-300 font-medium  md:w-1/2">
+                <h3 class="font-semibold text-xl mb-5">Tautan</h3>
+                <ul class="text-slate-300">
+                    <li class="group"><a href="#home" class="inline-block text-base hover:text-primary mb-3">Beranda</a></li>
+                    <li class="group"><a href="#about" class="inline-block text-base hover:text-primary mb-3">Tentang Saya</a></li>
+                    <li class="group"><a href="#portfolio" class="inline-block text-base hover:text-primary mb-3">Portfolio</a></li>
+                    <li class="group"><a href="#client" class="inline-block text-base hover:text-primary mb-3">Clients</a></li>
+                    <!-- <li class="group"><a href="#" class="text-base text-dart py-2 mx-8 flex group-hover:text-primary ">Kontak</a></li> -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="w-full pt-10 border-t border-slate-800">
+            <div class="flex items-center justify-center mb-5">
+                <!-- Youtube -->
+                <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                    <i class="fa-brands fa-youtube field-current"></i>
+                </a>
+
+                <!-- Instagram-->
+                <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <!-- Facebook -->
+                <a href="#" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+            <p class="font-medium text-xs text-slate-500 text-center">Dibuat Oleh <a href="#" target="_blank" class="font-bold text-primary">Ferdy Herdianto</a>, menggunakan  <a href="#" target="_blank" class="font-bold text-sky-500">Tailwind CSS</a></p>
+        </div>
+    </div>
+</footer>
+<!-- footer end -->
+
+<script src="dist/js/script.js"></script>
+
+</body>
+</html>
